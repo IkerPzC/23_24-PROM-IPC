@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Vista de Texto -->
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="363dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="Escribe tu nombre:" />
+
+    <!-- Área de Texto -->
+
+    <!-- Botón 1 -->
+
+    <EditText
+        android:id="@+id/textArea"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/editText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-4dp"
+        android:hint="Nombre" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:layout_below="@id/textArea"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="150dp" />
+
+    <!-- Botón 2 -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textArea"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="280dp"
+        android:text="ACEPTAR" />
+</RelativeLayout>
