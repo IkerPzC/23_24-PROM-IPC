@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:switchStyle">@style/CustomSwitchStyle</item>
+    </style>
+
+    <style name="CustomSwitchStyle" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <!-- Cambiar el color del thumb cuando está en estado On -->
+        <item name="android:thumbTint">@color/moradoTostado</item>
+
+        <!-- Cambiar el color del track cuando está en estado On -->
+        <item name="android:trackTint">@color/azulSielo</item>
+
+<!--        &lt;!&ndash; Cambiar el color del thumb cuando está en estado Off &ndash;&gt;-->
+<!--        <item name="android:thumbTint">@color/colorOff</item>-->
+
+<!--        &lt;!&ndash; Cambiar el color del track cuando está en estado Off &ndash;&gt;-->
+<!--        <item name="android:trackTint">@color/colorOffTrack</item>-->
+    </style>
+
+</resources>

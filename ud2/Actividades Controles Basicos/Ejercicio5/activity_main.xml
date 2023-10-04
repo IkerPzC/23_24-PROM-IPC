@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView en la parte superior que ocupa todo el ancho -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEMPERATURA"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- LinearLayout horizontal en la parte inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60sp"
+        android:gravity="center">
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/botonRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="28sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- EditText -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20ºC"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Otro botón -->
+        <Button
+            android:id="@+id/botonSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="+" />
+    </LinearLayout>
+
+    <!-- TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cámaras de Seguridad"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Switch -->
+    <Switch
+        android:id="@+id/switchCamaras"
+        style="@style/CustomSwitchStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:textOff="Apagadas"
+        android:textOn="Encendidas" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Otro TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luces"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="60sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- LinearLayout horizontal con 3 ToggleButton -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- ToggleButton 1 -->
+        <ToggleButton
+            android:id="@+id/luz1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Luz 1"
+            android:background="@drawable/toggle_button_selector"
+            android:checked="true" />
+
+        <!-- ToggleButton 2 -->
+        <ToggleButton
+            android:id="@+id/luz2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Luz 2"
+            android:background="@drawable/toggle_button_selector"
+            android:checked="false" />
+
+        <!-- ToggleButton 3 -->
+        <ToggleButton
+            android:id="@+id/luz3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Luz 3"
+            android:background="@drawable/toggle_button_selector"
+            android:checked="false" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60sp"
+        android:gravity="center"
+        android:text="Brillo luces"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="10sp"
+        android:max="100"
+        android:progress="10"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Texto "Introduce PRIMER valor" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce PRIMER valor"
+        android:textSize="18sp"/>
+
+    <!-- Cuadro de entrada de texto para el primer valor -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Texto "Introduce SEGUNDO valor" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce SEGUNDO valor"
+        android:textSize="18sp"/>
+
+    <!-- Cuadro de entrada de texto para el segundo valor -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 4 Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botonSuma"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="botonSuma"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/botonResta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="botonResta"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/botonMultiplicacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="botonMultiplicacion"
+            android:text="*"/>
+
+        <Button
+            android:id="@+id/botonDivision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="botonDivision"
+            android:text="/"/>
+    </LinearLayout>
+
+    <!-- Texto "RESULTADO:" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO:"
+        android:textSize="18sp"/>
+
+    <!-- Texto vacío para mostrar el resultado -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+</LinearLayout>
+
