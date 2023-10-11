@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMA"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@+id/editTextNumero1"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextNumero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumero1"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:layout_below="@+id/editTextNumero2"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumero2"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonComprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPROBAR RESULTADO"
+        android:layout_below="@+id/editTextResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewPreguntasCorrectas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonComprobar"
+        android:layout_marginTop="22dp"
+        android:text="PREGUNTAS CORRECTAS: 0" />
+
+    <TextView
+        android:id="@+id/textViewPreguntasIncorrectas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonComprobar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/textViewPreguntasCorrectas"
+        android:text="INCORRECTAS: 0" />
+</RelativeLayout>
+
