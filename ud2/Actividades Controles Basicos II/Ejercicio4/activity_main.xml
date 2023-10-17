@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:text="ELIGE UN BOTÓN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnVerde"
+        android:text="Verde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/verde"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnRojo"
+        android:text="Rojo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/rojo"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAzul"
+        android:text="Azul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/azul"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAmarillo"
+        android:text="Amarillo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/amarillo"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/txtContadorVerde"
+        android:text="SELECCIÓN VERDE: 0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/txtContadorRojo"
+        android:text="SELECCIÓN ROJO: 0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/txtContadorAzul"
+        android:text="SELECCIÓN AZUL: 0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/txtContadorAmarillo"
+        android:text="SELECCIÓN AMARILLO: 0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/txtContadorTotal"
+        android:text="SELECCIÓN TOTAL: 0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/moradoTostado"
+        android:textSize="24sp"
+        android:layout_marginTop="46dp"/>
+</LinearLayout>
+

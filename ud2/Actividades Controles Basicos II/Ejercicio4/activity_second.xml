@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <!-- Contenido del layout -->
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:text="Volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/gris"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
